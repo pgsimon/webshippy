@@ -1,0 +1,40 @@
+{
+    "name": "pgsimon/webshippy",
+    "description": "Test application for Webshippy",
+    "type": "project",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Simon Péter",
+            "email": "simon.peterweb@gmail.com",
+            "homepage": "https://www.linkedin.com/in/simonpeter2/",
+            "role": "Lead Backend Developer"
+        }
+    ],
+    "require": {
+        "php": "8.1.*",
+        "league/csv": "9.8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "3.*",
+        "vimeo/psalm": "^4.20",
+        "jaschilz/php-coverage-badger": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webshippy\\": "src/Webshippy"
+        }
+    },
+    "scripts": {
+        "phpcs": "./vendor/bin/phpcs  --standard=phpcs.xml src tests",
+        "phpunit": [
+            "./vendor/bin/phpunit tests/ --coverage-clover tests/clover.xml",
+            "./vendor/bin/php-coverage-badger tests/clover.xml tests/clover.svg"
+        ],
+        "phpunit-ci": [
+            "./vendor/bin/phpunit tests/"
+        ],
+        "psalm": "./vendor/bin/psalm"
+    }
+}
