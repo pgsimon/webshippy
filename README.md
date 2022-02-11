@@ -17,11 +17,12 @@ Demo project for Webshippy.
   * e.g: `docker exec -it webshippy_php_1 php index.php '{"1":8,"2":4,"3":5}'`
 
 ## Tools
-| script           | description                                      |            
-|------------------|--------------------------------------------------|
-| composer phpcs   | Run code sniffer analyzer                        |
-| composer phpunit | Run unit tests and code coverage badge generator |
-| composer psalm   | Code static analyzer tool                        |
+| script              | description                                      |
+|---------------------|--------------------------------------------------|
+| composer phpcs      | Run code sniffer analyzer                        |
+| composer phpunit    | Run unit tests and code coverage badge generator |
+| composer phpunit-ci | Run unit tests                                   |
+| composer psalm      | Code static analyzer tool                        |
 
 # Original Task
 
