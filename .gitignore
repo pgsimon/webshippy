@@ -1,0 +1,6 @@
+vendor
+.idea
+tests/.phpunit.cache
+tests/clover.xml
+.DS_Store
+Thumbs.db
