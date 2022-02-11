@@ -1,10 +1,10 @@
-# Webshippy test application
+# Webshippy demo application
 
 ![Code coverage](tests/clover.svg)
 
 Demo project for Webshippy.
 
-## Pre-requisite
+## Prerequisites
 * Install docker (https://www.docker.com/get-started) 
 
 ## Install
